@@ -9,8 +9,10 @@ request.onupgradeneeded = (e) => {
     db.createObjectStore('pending', { autoIncrement: true });
 };
 
-// Upon success of openiong the budget db, check if user is online and if they are, check for stored 'pending' objs in indexedDB
+// Upon success of opening the budget db, check if user is online and if they are, check for stored 'pending' obj in indexedDB
 request.onsuccess = (e) => {
+    db = event.target.result;
+
     if (navigator.onLine) checkDatabase();
 };
 
@@ -18,7 +20,7 @@ request.onerror = (e) => {
     console.log(`Error: ${e.target.errorCode}`);
 };
 
-// Helper Function for failed fetch when posting to our Mongo DB -- used in catch error handler on index.js
+// Helper Function for failed fetch when posting to our Mongo DB -- used in catch error handler
 function saveRecord(record) {
     console.log('Saving record');
     const transaction = db.transaction(['pending'], 'readwrite');
