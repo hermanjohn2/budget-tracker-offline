@@ -1,0 +1,27 @@
+{
+  "icons": [
+    {
+      "src": "icon_512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "icon_192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon_144x144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    }
+  ],
+  "name": "Budget Tracker",
+  "short_name": "Budget Tracker",
+  "orientation": "portrait",
+  "display": "standalone",
+  "start_url": "/",
+  "description": "A budget tracking application",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff"
+}

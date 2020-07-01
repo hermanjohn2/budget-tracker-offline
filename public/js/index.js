@@ -1,3 +1,6 @@
+// Importing this file to utilize functions and to allow webpack to bundle both files into one
+const indexedDB = require('./indexedDB');
+
 let transactions = [];
 let myChart;
 
@@ -138,7 +141,7 @@ function sendTransaction(isAdding) {
 		})
 		.catch(err => {
 			// fetch failed, so save in indexed db
-			saveRecord(transaction);
+			indexedDB.saveRecord(transaction);
 
 			// clear form
 			nameEl.value = '';
@@ -153,3 +156,5 @@ document.querySelector('#add-btn').onclick = function () {
 document.querySelector('#sub-btn').onclick = function () {
 	sendTransaction(false);
 };
+
+window.addEventListener('online', indexedDB.checkDatabase);

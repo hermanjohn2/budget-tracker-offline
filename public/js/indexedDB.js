@@ -64,4 +64,8 @@ function checkDatabase() {
 	};
 }
 
-window.addEventListener('online', checkDatabase);
+// Exporting the two functions we will use in our index.js
+module.exports = {
+	checkDatabase,
+	saveRecord
+};

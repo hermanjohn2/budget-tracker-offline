@@ -1,6 +1,6 @@
 # Budget Tracker
 
-The perfect application to help keep up with daily withdraws and deposits to your personal bank accounts. This application's simplicity is ideal for keeping track of your personal purchases and deposits aside from your actual banking application. It allows you to keep your own personal record of banking activity.
+The perfect application to help keep up with daily withdraws and deposits to your personal bank accounts. This application's simplicity is ideal for keeping track of your personal purchases and deposits aside from your actual banking application. It allows you to keep your own personal record of banking activity. One of the best features of this application is it's ability to function offline and still maintain an accurate balance.
 
 ## Table of Contents
 
@@ -12,6 +12,10 @@ The perfect application to help keep up with daily withdraws and deposits to you
 [![GitHub version](https://badge.fury.io/gh/hermanjohn2%2Fbudget-tracker-offline.svg)](https://github.com/hermanjohn2/budget-tracker-offline)
 
 ## Installation
+
+Visit: https://budget-tracker-jjh.herokuapp.com/
+
+Look for an option in your URL to download the application onto your local machine.
 
 ## Usage
 
@@ -25,6 +29,6 @@ Once your application is installed or open in your browser, use the available fi
 
 ## Questions
 
-Please send questions to: [Your Email Here]
+Please send questions to: hermanjohn2@gmail.com
 
 ![GitHub Avatar](https://avatars0.githubusercontent.com/u/57771371?v=4)
