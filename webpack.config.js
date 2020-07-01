@@ -1,5 +1,3 @@
-const { request } = require('express');
-
 const webpackPwaManifest = require('webpack-pwa-manifest');
 const path = require('path');
 
@@ -11,6 +9,20 @@ const config = {
 	output: {
 		path: `${__dirname}/public/dist`,
 		filename: '[name].bundle.js'
+	},
+	module: {
+		rules: [
+			{
+				test: /\.js$/,
+				exclude: /node_modules/,
+				use: {
+					loader: 'babel-loader',
+					options: {
+						presets: ['@babel/preset-env']
+					}
+				}
+			}
+		]
 	},
 	plugins: [
 		new webpackPwaManifest({
