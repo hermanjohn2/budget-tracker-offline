@@ -7,7 +7,6 @@
 		"prestart": "npx webpack",
 		"start": "node server.js",
 		"watch": "nodemon server.js",
-		"build": "npx webpack --watch",
 		"lite-server": "lite-server"
 	},
 	"repository": {
